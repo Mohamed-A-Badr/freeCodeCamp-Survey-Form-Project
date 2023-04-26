@@ -10,24 +10,26 @@
 </head>
 
 <body>
-    <h1>freeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platfrom</p>
-    <form>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platfrom</p>
+    <form id="survey-form">
 
         <!--User input information-->
 
-        <div>
-            <label for="name">Name<input id="name" type="text" placeholder="Enter your name"></label>
-            <label for="email">Email<input id="email" type="email" placeholder="Enter your Email"></label>
-            <label for="age">Age <small>(optional)</small><input id="age" type="age" min="10" max="120"
-                    placeholder="Age"></label>
+        <div class="user-info">
+            <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Enter your name"
+                    required></label>
+            <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your Email"
+                    required></label>
+            <label id="number-label" for="age">Age <small>(optional)</small><input id="number" type="age" min="10"
+                    max="120" placeholder="Age"></label>
         </div>
 
         <!--User Role Information-->
 
         <div>
             <p>Which option best describes your current role?</p>
-            <select id="role">
+            <select id="dropdown">
                 <option value="" disabled selected>Select current role</option>
                 <option value="1">Student</option>
                 <option value="2">Full Time Job</option>
@@ -51,7 +53,7 @@
 
         <div>
             <p>What is your favorite feature of freeCodeCamp?</p>
-            <select id="favorite">
+            <select id="dropdown">
                 <option value="" disabled selected>Select an option</option>
                 <option value="1">Challenges</option>
                 <option value="2">Projects</option>
@@ -85,7 +87,7 @@
             <p>Any comments or suggestions?</p>
             <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
         </div>
-        <input type="submit" value="Submit">
+        <input id="submit" type="submit" value="Submit">
     </form>
 </body>
 

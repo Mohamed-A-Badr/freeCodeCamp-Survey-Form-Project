@@ -12,7 +12,6 @@ h1, p{
     color: white;
 }
 
-/* Form */
 form{
     margin: 0 auto;
     background-color: rgba(27, 27, 50, 0.8);
@@ -26,6 +25,10 @@ form p {
     text-align: unset;
     margin-bottom: 5px;
     font-size: 1.2rem;
+}
+
+div{
+    width: 100%;
 }
 
 textarea, input,select{
@@ -62,5 +65,16 @@ label{
 }
 
 textarea{
-    height: 10vh;
+    height: 15vh;
+    resize: vertical;
+}
+
+textarea::placeholder{
+    font-size:1.1rem
+}
+
+input[type="submit"]{
+    background-color: #37af65;
+    color: white;
+    font-size: 1rem
 }
